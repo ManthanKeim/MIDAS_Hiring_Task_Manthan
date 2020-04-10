@@ -1,0 +1,376 @@
+Last login: Fri Apr 10 14:02:20 on ttys000
+cd 
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Manthans-MacBook-Pro:~ manthan$ cd /Users/manthan/Documents/Projects/MIDAS_final/scraping\ and\ visualization
+-bash: cd: /Users/manthan/Documents/Projects/MIDAS_final/scraping and visualization: No such file or directory
+Manthans-MacBook-Pro:~ manthan$ cd /Users/manthan/Documents/Projects/MIDAS_final/scraping\ and\ visualization\ data
+Manthans-MacBook-Pro:scraping and visualization data manthan$ python3 mid_scr.py 
+Manthans-MacBook-Pro:scraping and visualization data manthan$ cd ..
+Manthans-MacBook-Pro:MIDAS_final manthan$ python3 model.py 
+Traceback (most recent call last):
+  File "model.py", line 38, in <module>
+    india_csv = pd.read_csv('data.csv')
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 685, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 457, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 1135, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 1917, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 689, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'data.csv' does not exist: b'data.csv'
+Manthans-MacBook-Pro:MIDAS_final manthan$ python3 model.py 
+Traceback (most recent call last):
+  File "model.py", line 20, in <module>
+    dataset = pd.read_csv('/scraping and visualization data/reddit_10Apr.csv')
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 685, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 457, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 1135, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 1917, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 689, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'/scraping and visualization data/reddit_10Apr.csv' does not exist: b'/scraping and visualization data/reddit_10Apr.csv'
+Manthans-MacBook-Pro:MIDAS_final manthan$ python3 model.py 
+Traceback (most recent call last):
+  File "model.py", line 38, in <module>
+    india_csv = pd.read_csv('data.csv')
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 685, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 457, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 1135, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 1917, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 689, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'data.csv' does not exist: b'data.csv'
+Manthans-MacBook-Pro:MIDAS_final manthan$ python3 model.py 
+Traceback (most recent call last):
+  File "model.py", line 20, in <module>
+    dataset = pd.read_csv('/scraping and visualization data/reddit_10Apr.csv')
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 685, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 457, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 1135, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 1917, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 689, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'/scraping and visualization data/reddit_10Apr.csv' does not exist: b'/scraping and visualization data/reddit_10Apr.csv'
+Manthans-MacBook-Pro:MIDAS_final manthan$ python3 model.py 
+Traceback (most recent call last):
+  File "model.py", line 38, in <module>
+    india_csv = pd.read_csv('data.csv')
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 685, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 457, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 1135, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/parsers.py", line 1917, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 689, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'data.csv' does not exist: b'data.csv'
+Manthans-MacBook-Pro:MIDAS_final manthan$ python3 model.py 
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/bs4/__init__.py:282: UserWarning: "https://youtu.be/kBvIqVr__C0" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  ' that document to Beautiful Soup.' % decoded_markup
+Flair Detection using Title as Feature
+Flair Detection using Body as Feature
+Flair Detection using URL as Feature
+Flair Detection using Comments as Feature
+Results of Naive Bayes Classifier
+accuracy 0.5275482093663911
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+                    precision    recall  f1-score   support
+
+          AskIndia       0.28      0.92      0.43        62
+     Non-Political       0.45      0.36      0.40        59
+     [R]eddiquette       0.47      0.58      0.52        57
+         Scheduled       0.78      0.83      0.81        48
+       Photography       0.72      0.77      0.75        57
+Science/Technology       0.83      0.15      0.25        68
+          Politics       0.81      0.65      0.72        52
+  Business/Finance       0.40      0.60      0.48        58
+    Policy/Economy       0.59      0.68      0.63        62
+            Sports       0.83      0.14      0.24        70
+              Food       0.73      0.44      0.55        62
+               AMA       0.88      0.48      0.62        63
+       Coronavirus       0.00      0.00      0.00         8
+
+          accuracy                           0.53       726
+         macro avg       0.60      0.51      0.49       726
+      weighted avg       0.64      0.53      0.51       726
+
+Results of Linear Support Vector Machine
+accuracy 0.6707988980716253
+                    precision    recall  f1-score   support
+
+          AskIndia       0.58      0.79      0.67        62
+     Non-Political       0.56      0.39      0.46        59
+     [R]eddiquette       0.62      0.60      0.61        57
+         Scheduled       0.73      0.94      0.82        48
+       Photography       0.65      0.84      0.73        57
+Science/Technology       0.81      0.57      0.67        68
+          Politics       0.79      0.87      0.83        52
+  Business/Finance       0.51      0.60      0.55        58
+    Policy/Economy       0.67      0.61      0.64        62
+            Sports       0.78      0.54      0.64        70
+              Food       0.62      0.61      0.62        62
+               AMA       0.79      0.79      0.79        63
+       Coronavirus       1.00      0.62      0.77         8
+
+          accuracy                           0.67       726
+         macro avg       0.70      0.68      0.68       726
+      weighted avg       0.68      0.67      0.67       726
+
+Results of Logistic Regression
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.
+  FutureWarning)
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:469: FutureWarning: Default multi_class will be changed to 'auto' in 0.22. Specify the multi_class option to silence this warning.
+  "this warning.", FutureWarning)
+accuracy 0.6570247933884298
+                    precision    recall  f1-score   support
+
+          AskIndia       0.70      0.79      0.74        62
+     Non-Political       0.40      0.47      0.43        59
+     [R]eddiquette       0.61      0.63      0.62        57
+         Scheduled       0.84      0.88      0.86        48
+       Photography       0.73      0.79      0.76        57
+Science/Technology       0.75      0.53      0.62        68
+          Politics       0.78      0.69      0.73        52
+  Business/Finance       0.47      0.53      0.50        58
+    Policy/Economy       0.60      0.73      0.66        62
+            Sports       0.71      0.60      0.65        70
+              Food       0.62      0.58      0.60        62
+               AMA       0.79      0.73      0.76        63
+       Coronavirus       1.00      0.62      0.77         8
+
+          accuracy                           0.66       726
+         macro avg       0.69      0.66      0.67       726
+      weighted avg       0.67      0.66      0.66       726
+
+Results of Random Forest
+accuracy 0.6584022038567493
+                    precision    recall  f1-score   support
+
+          AskIndia       0.60      0.90      0.72        62
+     Non-Political       0.51      0.71      0.59        59
+     [R]eddiquette       0.67      0.54      0.60        57
+         Scheduled       0.56      0.94      0.70        48
+       Photography       0.78      0.68      0.73        57
+Science/Technology       0.76      0.71      0.73        68
+          Politics       0.78      0.75      0.76        52
+  Business/Finance       0.48      0.47      0.47        58
+    Policy/Economy       0.66      0.56      0.61        62
+            Sports       0.76      0.46      0.57        70
+              Food       0.65      0.56      0.60        62
+               AMA       0.88      0.70      0.78        63
+       Coronavirus       1.00      0.62      0.77         8
+
+          accuracy                           0.66       726
+         macro avg       0.70      0.66      0.67       726
+      weighted avg       0.68      0.66      0.66       726
+
+Results of MLP Classifier
+accuracy 0.4793388429752066
+                    precision    recall  f1-score   support
+
+          AskIndia       0.79      0.37      0.51        62
+     Non-Political       0.22      0.53      0.31        59
+     [R]eddiquette       0.47      0.60      0.53        57
+         Scheduled       0.61      0.83      0.70        48
+       Photography       0.74      0.44      0.55        57
+Science/Technology       0.36      0.24      0.28        68
+          Politics       0.78      0.40      0.53        52
+  Business/Finance       0.51      0.45      0.48        58
+    Policy/Economy       0.55      0.53      0.54        62
+            Sports       0.29      0.53      0.38        70
+              Food       0.79      0.35      0.49        62
+               AMA       0.78      0.56      0.65        63
+       Coronavirus       1.00      0.62      0.77         8
+
+          accuracy                           0.48       726
+         macro avg       0.61      0.50      0.52       726
+      weighted avg       0.57      0.48      0.49       726
+
+Manthans-MacBook-Pro:MIDAS_final manthan$ cd scraping\ and\ visualization\ data/
+Manthans-MacBook-Pro:scraping and visualization data manthan$ python3 visual.py 
+Traceback (most recent call last):
+  File "visual.py", line 5, in <module>
+    from textblob import TextBlob
+ModuleNotFoundError: No module named 'textblob'
+Manthans-MacBook-Pro:scraping and visualization data manthan$ pip3 install textblob
+Collecting textblob
+  Downloading textblob-0.15.3-py2.py3-none-any.whl (636 kB)
+     |████████████████████████████████| 636 kB 5.4 MB/s 
+Requirement already satisfied: nltk>=3.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from textblob) (3.4.5)
+Requirement already satisfied: six in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from nltk>=3.1->textblob) (1.13.0)
+Installing collected packages: textblob
+Successfully installed textblob-0.15.3
+Manthans-MacBook-Pro:scraping and visualization data manthan$ python3 visual.py 
+Traceback (most recent call last):
+  File "visual.py", line 7, in <module>
+    import seaborn as sns
+ModuleNotFoundError: No module named 'seaborn'
+Manthans-MacBook-Pro:scraping and visualization data manthan$ pip3 install seaborn
+Collecting seaborn
+  Downloading seaborn-0.10.0-py3-none-any.whl (215 kB)
+     |████████████████████████████████| 215 kB 4.9 MB/s 
+Requirement already satisfied: numpy>=1.13.3 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from seaborn) (1.18.1)
+Requirement already satisfied: matplotlib>=2.1.2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from seaborn) (3.1.2)
+Requirement already satisfied: pandas>=0.22.0 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from seaborn) (0.25.3)
+Requirement already satisfied: scipy>=1.0.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from seaborn) (1.4.1)
+Requirement already satisfied: python-dateutil>=2.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from matplotlib>=2.1.2->seaborn) (2.7.1)
+Requirement already satisfied: kiwisolver>=1.0.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from matplotlib>=2.1.2->seaborn) (1.1.0)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from matplotlib>=2.1.2->seaborn) (2.4.5)
+Requirement already satisfied: cycler>=0.10 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from matplotlib>=2.1.2->seaborn) (0.10.0)
+Requirement already satisfied: pytz>=2017.2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from pandas>=0.22.0->seaborn) (2019.3)
+Requirement already satisfied: six>=1.5 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from python-dateutil>=2.1->matplotlib>=2.1.2->seaborn) (1.13.0)
+Requirement already satisfied: setuptools in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from kiwisolver>=1.0.1->matplotlib>=2.1.2->seaborn) (44.0.0)
+Installing collected packages: seaborn
+Successfully installed seaborn-0.10.0
+Manthans-MacBook-Pro:scraping and visualization data manthan$ python3 visual.py 
+Traceback (most recent call last):
+  File "visual.py", line 9, in <module>
+    import wordcloud
+ModuleNotFoundError: No module named 'wordcloud'
+Manthans-MacBook-Pro:scraping and visualization data manthan$ pip3 install wordcloud
+Collecting wordcloud
+  Downloading wordcloud-1.6.0-cp37-cp37m-macosx_10_6_x86_64.whl (157 kB)
+     |████████████████████████████████| 157 kB 3.9 MB/s 
+Requirement already satisfied: pillow in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from wordcloud) (6.2.1)
+Requirement already satisfied: matplotlib in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from wordcloud) (3.1.2)
+Requirement already satisfied: numpy>=1.6.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from wordcloud) (1.18.1)
+Requirement already satisfied: kiwisolver>=1.0.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from matplotlib->wordcloud) (1.1.0)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from matplotlib->wordcloud) (2.4.5)
+Requirement already satisfied: cycler>=0.10 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from matplotlib->wordcloud) (0.10.0)
+Requirement already satisfied: python-dateutil>=2.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from matplotlib->wordcloud) (2.7.1)
+Requirement already satisfied: setuptools in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from kiwisolver>=1.0.1->matplotlib->wordcloud) (44.0.0)
+Requirement already satisfied: six in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from cycler>=0.10->matplotlib->wordcloud) (1.13.0)
+Installing collected packages: wordcloud
+Successfully installed wordcloud-1.6.0
+Manthans-MacBook-Pro:scraping and visualization data manthan$ python3 visual.py 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2418 entries, 0 to 2417
+Data columns (total 12 columns):
+flair        2418 non-null object
+title        2418 non-null object
+score        2418 non-null int64
+id           2418 non-null object
+url          2418 non-null object
+comms_num    2418 non-null int64
+body         1403 non-null object
+author       2418 non-null object
+comments     2200 non-null object
+ups          2418 non-null int64
+downs        2418 non-null int64
+timestamp    2418 non-null object
+dtypes: int64(4), object(8)
+memory usage: 226.8+ KB
+None
+Most common words in India
+*****************
+[('india', 486), ('political', 294), ('non', 232), ('coronavirus', 222),
+ ('indian', 203), ('ama', 195), ('food', 174), ('askindia', 163),
+ ('photography', 138), ('thread', 132), ('r', 113), ('delhi', 83),
+ ('economy', 82), ('help', 81), ('scheduled', 81), ('sports', 81), ('modi', 80),
+ ('science', 80), ('people', 79), ('politics', 75), ('week', 74), ('need', 71),
+ ('2019', 63), ("india's", 61), ('lockdown', 61), ('us', 60), ('pm', 60),
+ ('technology', 60), ('one', 59), ('new', 58), ('last', 55), ('would', 54),
+ ('like', 52), ('weekly', 51), ('get', 49)]
+
+Most common words in all subreddits
+*****************
+[('india', 486), ('political', 294), ('non', 232), ('coronavirus', 222),
+ ('indian', 203), ('ama', 195), ('food', 174), ('askindia', 163),
+ ('photography', 138), ('thread', 132), ('r', 113), ('delhi', 83),
+ ('economy', 82), ('help', 81), ('scheduled', 81), ('sports', 81), ('modi', 80),
+ ('science', 80), ('people', 79), ('politics', 75), ('week', 74), ('need', 71),
+ ('2019', 63), ("india's", 61), ('lockdown', 61), ('us', 60), ('pm', 60),
+ ('technology', 60), ('one', 59), ('new', 58), ('last', 55), ('would', 54),
+ ('like', 52), ('weekly', 51), ('get', 49)]
+Matplotlib is building the font cache using fc-list. This may take a moment.
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+Manthans-MacBook-Pro:scraping and visualization data manthan$ cd ..
+Manthans-MacBook-Pro:MIDAS_final manthan$ flask run
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Usage: flask run [OPTIONS]
+
+Error: Failed to find Flask application or factory in module "wsgi". Use "FLASK_APP=wsgi:name to specify one.
+Manthans-MacBook-Pro:MIDAS_final manthan$ export FLASK_APP=app.py
+Manthans-MacBook-Pro:MIDAS_final manthan$ flask run
+ * Serving Flask app "app.py"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [10/Apr/2020 16:13:56] "GET / HTTP/1.1" 200 -
+https://www.reddit.com/r/india/comments/fqqdsg/coronavirus_covid19_megathread_news_and_updates_3/
+127.0.0.1 - - [10/Apr/2020 16:15:30] "GET / HTTP/1.1" 200 -
+https://www.reddit.com/r/india/comments/fvfyhe/captured_india_with_my_phone/
+['Photography']
+127.0.0.1 - - [10/Apr/2020 16:15:37] "POST /predict HTTP/1.1" 200 -
+https://www.reddit.com/r/india/comments/fqqdsg/coronavirus_covid19_megathread_news_and_updates_3/
+https://www.reddit.com/r/india/comments/fy8271/first_lynching_over_coronavirus_delhi_man_killed/
+['Coronavirus']
+127.0.0.1 - - [10/Apr/2020 16:16:14] "POST /predict HTTP/1.1" 200 -
+['AskIndia']
+127.0.0.1 - - [10/Apr/2020 16:28:20] "POST /predict HTTP/1.1" 200 -
+['AskIndia']
+127.0.0.1 - - [10/Apr/2020 16:28:32] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [10/Apr/2020 16:30:11] "GET / HTTP/1.1" 200 -
+https://www.reddit.com/r/india/comments/fqqdsg/coronavirus_covid19_megathread_news_and_updates_3/
+127.0.0.1 - - [10/Apr/2020 16:30:18] "POST /about HTTP/1.1" 200 -
+127.0.0.1 - - [10/Apr/2020 16:30:18] "GET /static/images/india.png HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2020 16:30:18] "GET /static/images/india2.png HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2020 16:30:18] "GET /static/images/india7.png HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2020 16:30:18] "GET /static/images/india4.png HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2020 16:30:18] "GET /static/images/india5.png HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2020 16:30:18] "GET /static/images/india6.png HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2020 16:30:18] "GET /static/images/india.png HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2020 16:30:18] "GET /static/images/india2.png HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2020 16:30:18] "GET /static/images/india7.png HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2020 16:30:18] "GET /static/images/india4.png HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2020 16:30:18] "GET /static/images/india5.png HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2020 16:30:18] "GET /static/images/india6.png HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2020 16:37:18] "GET /about HTTP/1.1" 405 -
+127.0.0.1 - - [10/Apr/2020 16:37:20] "GET / HTTP/1.1" 200 -
+https://www.reddit.com/r/india/comments/fqqdsg/coronavirus_covid19_megathread_news_and_updates_3/
+127.0.0.1 - - [10/Apr/2020 16:37:29] "POST /about HTTP/1.1" 200 -
+127.0.0.1 - - [10/Apr/2020 16:37:29] "GET /static/images/india2.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Apr/2020 16:37:29] "GET /static/images/india.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Apr/2020 16:37:29] "GET /static/images/india7.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Apr/2020 16:37:29] "GET /static/images/india4.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Apr/2020 16:37:29] "GET /static/images/india5.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Apr/2020 16:37:29] "GET /static/images/india6.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Apr/2020 16:39:08] "GET / HTTP/1.1" 200 -
+https://www.reddit.com/r/india/comments/fqqdsg/coronavirus_covid19_megathread_news_and_updates_3/
+127.0.0.1 - - [10/Apr/2020 16:39:17] "POST /about HTTP/1.1" 200 -
+
