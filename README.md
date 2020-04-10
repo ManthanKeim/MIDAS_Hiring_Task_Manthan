@@ -2,7 +2,7 @@
 
 [Project Hosted on : Heroku (CSS not enabled due to memory issue )](link)
 
-[Machine Learning Model: Google Drive link can be downloaded and used ](link)
+[Machine Learning Model: Google Drive link can be downloaded and used ](https://drive.google.com/open?id=16vAF5CTac_WusgsFWKQHybOIgawz6tP_)
 
 
 ### Technologies Used:
