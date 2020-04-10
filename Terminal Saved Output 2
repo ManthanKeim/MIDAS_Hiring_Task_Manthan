@@ -1,0 +1,985 @@
+Last login: Fri Apr 10 21:27:55 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Manthans-MacBook-Pro:~ manthan$ cd Documents/GitHub/MIDAS_final/
+Manthans-MacBook-Pro:MIDAS_final manthan$ virtualenv env
+Traceback (most recent call last):
+  File "/usr/local/bin/virtualenv", line 6, in <module>
+    from virtualenv import main
+ModuleNotFoundError: No module named 'virtualenv'
+Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 install virtualenv
+Collecting virtualenv
+  Downloading virtualenv-20.0.17-py2.py3-none-any.whl (4.6 MB)
+     |████████████████████████████████| 4.6 MB 4.3 MB/s 
+Requirement already satisfied: importlib-metadata<2,>=0.12; python_version < "3.8" in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from virtualenv) (1.2.0)
+Collecting filelock<4,>=3.0.0
+  Downloading filelock-3.0.12-py3-none-any.whl (7.6 kB)
+Requirement already satisfied: six<2,>=1.9.0 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from virtualenv) (1.13.0)
+Collecting distlib<1,>=0.3.0
+  Downloading distlib-0.3.0.zip (571 kB)
+     |████████████████████████████████| 571 kB 8.1 MB/s 
+Collecting appdirs<2,>=1.4.3
+  Downloading appdirs-1.4.3-py2.py3-none-any.whl (12 kB)
+Requirement already satisfied: zipp>=0.5 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from importlib-metadata<2,>=0.12; python_version < "3.8"->virtualenv) (0.6.0)
+Requirement already satisfied: more-itertools in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from zipp>=0.5->importlib-metadata<2,>=0.12; python_version < "3.8"->virtualenv) (8.0.2)
+Building wheels for collected packages: distlib
+  Building wheel for distlib (setup.py) ... done
+  Created wheel for distlib: filename=distlib-0.3.0-py3-none-any.whl size=340428 sha256=c940256a06182e63e7ad0d143225e6fb57f85ed8a5d238f608d83840e6ad0fb8
+  Stored in directory: /Users/manthan/Library/Caches/pip/wheels/a2/19/da/a15d4e2bedf3062c739b190d5cb5b7b2ecfbccb6b0d93c861b
+Successfully built distlib
+^[[A^[[BInstalling collected packages: filelock, distlib, appdirs, virtualenv
+Successfully installed appdirs-1.4.3 distlib-0.3.0 filelock-3.0.12 virtualenv-20.0.17
+Manthans-MacBook-Pro:MIDAS_final manthan$ virtualenv env
+Traceback (most recent call last):
+  File "/usr/local/bin/virtualenv", line 6, in <module>
+    from virtualenv import main
+ModuleNotFoundError: No module named 'virtualenv'
+Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 freeze > requirements.txt
+Manthans-MacBook-Pro:MIDAS_final manthan$ virtualenv env
+Traceback (most recent call last):
+  File "/usr/local/bin/virtualenv", line 6, in <module>
+    from virtualenv import main
+ModuleNotFoundError: No module named 'virtualenv'
+Manthans-MacBook-Pro:MIDAS_final manthan$ python3 -m virtualenv env
+created virtual environment CPython3.7.3.final.0-64 in 601ms
+  creator CPython3Posix(dest=/Users/manthan/Documents/GitHub/MIDAS_final/env, clear=False, global=False)
+  seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, via=copy, app_data_dir=/Users/manthan/Library/Application Support/virtualenv/seed-app-data/v1.0.1)
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+Manthans-MacBook-Pro:MIDAS_final manthan$ source venv/bin/activate
+-bash: venv/bin/activate: No such file or directory
+Manthans-MacBook-Pro:MIDAS_final manthan$ source env/bin/activate
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ flask run
+ * Serving Flask app "app.py"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+^Z
+[1]+  Stopped                 flask run
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 freeze > requirements.txt
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip install numpy
+Collecting numpy
+  Downloading numpy-1.18.2-cp37-cp37m-macosx_10_9_x86_64.whl (15.1 MB)
+     |████                            | 1.9 MB 1.3 MB/s eta 0:00:10^Z
+[2]+  Stopped                 pip install numpy
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 install numpy
+Collecting numpy
+  Downloading numpy-1.18.2-cp37-cp37m-macosx_10_9_x86_64.whl (15.1 MB)
+     |████████████████████████████████| 15.1 MB 861 kB/s 
+Installing collected packages: numpy
+Successfully installed numpy-1.18.2
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 install falsk
+ERROR: Could not find a version that satisfies the requirement falsk (from versions: none)
+ERROR: No matching distribution found for falsk
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 install flask
+Collecting flask
+  Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+     |████████████████████████████████| 94 kB 3.2 MB/s 
+Collecting Jinja2>=2.10.1
+  Downloading Jinja2-2.11.1-py2.py3-none-any.whl (126 kB)
+     |████████████████████████████████| 126 kB 2.9 MB/s 
+Collecting Werkzeug>=0.15
+  Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+     |████████████████████████████████| 298 kB 1.3 MB/s 
+Collecting itsdangerous>=0.24
+  Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+Collecting click>=5.1
+  Downloading click-7.1.1-py2.py3-none-any.whl (82 kB)
+     |████████████████████████████████| 82 kB 1.7 MB/s 
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp37-cp37m-macosx_10_6_intel.whl (18 kB)
+Installing collected packages: MarkupSafe, Jinja2, Werkzeug, itsdangerous, click, flask
+Successfully installed Jinja2-2.11.1 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.1 flask-1.1.2 itsdangerous-1.1.0
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 install sklearn
+Processing /Users/manthan/Library/Caches/pip/wheels/46/ef/c3/157e41f5ee1372d1be90b09f74f82b10e391eaacca8f22d33e/sklearn-0.0-py2.py3-none-any.whl
+Collecting scikit-learn
+  Downloading scikit_learn-0.22.2.post1-cp37-cp37m-macosx_10_9_x86_64.whl (7.1 MB)
+     |████████████████████████████████| 7.1 MB 3.5 MB/s 
+Collecting scipy>=0.17.0
+  Downloading scipy-1.4.1-cp37-cp37m-macosx_10_6_intel.whl (28.4 MB)
+     |████████████████████████████████| 28.4 MB 939 kB/s 
+Collecting joblib>=0.11
+  Downloading joblib-0.14.1-py2.py3-none-any.whl (294 kB)
+     |████████████████████████████████| 294 kB 5.6 MB/s 
+Requirement already satisfied: numpy>=1.11.0 in ./env/lib/python3.7/site-packages (from scikit-learn->sklearn) (1.18.2)
+Installing collected packages: scipy, joblib, scikit-learn, sklearn
+Successfully installed joblib-0.14.1 scikit-learn-0.22.2.post1 scipy-1.4.1 sklearn-0.0
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 install pickle
+ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+ERROR: No matching distribution found for pickle
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 install praw
+Collecting praw
+  Using cached praw-6.5.1-py3-none-any.whl (134 kB)
+Collecting update-checker>=0.16
+  Using cached update_checker-0.16-py2.py3-none-any.whl (7.6 kB)
+Collecting websocket-client>=0.54.0
+  Using cached websocket_client-0.57.0-py2.py3-none-any.whl (200 kB)
+Collecting prawcore<2.0,>=1.0.1
+  Using cached prawcore-1.0.1-py2.py3-none-any.whl (14 kB)
+Collecting requests>=2.3.0
+  Downloading requests-2.23.0-py2.py3-none-any.whl (58 kB)
+     |████████████████████████████████| 58 kB 3.5 MB/s 
+Collecting six
+  Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1
+  Downloading urllib3-1.25.8-py2.py3-none-any.whl (125 kB)
+     |████████████████████████████████| 125 kB 2.0 MB/s 
+Collecting certifi>=2017.4.17
+  Downloading certifi-2020.4.5.1-py2.py3-none-any.whl (157 kB)
+     |████████████████████████████████| 157 kB 3.2 MB/s 
+Collecting idna<3,>=2.5
+  Downloading idna-2.9-py2.py3-none-any.whl (58 kB)
+     |████████████████████████████████| 58 kB 3.7 MB/s 
+Collecting chardet<4,>=3.0.2
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+     |████████████████████████████████| 133 kB 3.1 MB/s 
+Installing collected packages: urllib3, certifi, idna, chardet, requests, update-checker, six, websocket-client, prawcore, praw
+Successfully installed certifi-2020.4.5.1 chardet-3.0.4 idna-2.9 praw-6.5.1 prawcore-1.0.1 requests-2.23.0 six-1.14.0 update-checker-0.16 urllib3-1.25.8 websocket-client-0.57.0
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 install bs4
+Collecting bs4
+  Downloading bs4-0.0.1.tar.gz (1.1 kB)
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.9.0-py3-none-any.whl (109 kB)
+     |████████████████████████████████| 109 kB 5.3 MB/s 
+Collecting soupsieve>1.2
+  Downloading soupsieve-2.0-py2.py3-none-any.whl (32 kB)
+Building wheels for collected packages: bs4
+  Building wheel for bs4 (setup.py) ... done
+  Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1272 sha256=8e8d9aa3df5db76976fd841613fdc33c8b1081de82df36dff9d58e62c5d3e1ac
+  Stored in directory: /Users/manthan/Library/Caches/pip/wheels/0a/9e/ba/20e5bbc1afef3a491f0b3bb74d508f99403aabe76eda2167ca
+Successfully built bs4
+Installing collected packages: soupsieve, beautifulsoup4, bs4
+Successfully installed beautifulsoup4-4.9.0 bs4-0.0.1 soupsieve-2.0
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 install regex
+Collecting regex
+  Downloading regex-2020.4.4.tar.gz (695 kB)
+     |████████████████████████████████| 695 kB 4.3 MB/s 
+Building wheels for collected packages: regex
+  Building wheel for regex (setup.py) ... done
+  Created wheel for regex: filename=regex-2020.4.4-cp37-cp37m-macosx_10_9_x86_64.whl size=286750 sha256=e7aec0d081d137d463871db40314ef81d6d9af79c9d10f177a16cb0644d88fa4
+  Stored in directory: /Users/manthan/Library/Caches/pip/wheels/52/98/5c/8d5d7a5321d2de463dfc6f7b32aab8b16e564cfce553b28daf
+Successfully built regex
+Installing collected packages: regex
+Successfully installed regex-2020.4.4
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 freeze > requirements.txt
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ heroku create
+Creating app... done, ⬢ damp-tundra-68404
+https://damp-tundra-68404.herokuapp.com/ | https://git.heroku.com/damp-tundra-68404.git
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ heroku open
+ ›   Warning: heroku update available from 7.35.0 to 7.39.2.
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git push heroku master
+Enumerating objects: 43, done.
+Counting objects: 100% (43/43), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (35/35), done.
+Writing objects: 100% (43/43), 5.41 MiB | 1.13 MiB/s, done.
+Total 43 (delta 8), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote:  !     No default language could be detected for this app.
+remote: 			HINT: This occurs when Heroku cannot detect the buildpack to use for this application automatically.
+remote: 			See https://devcenter.heroku.com/articles/buildpacks
+remote: 
+remote:  !     Push failed
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to damp-tundra-68404.
+remote: 
+To https://git.heroku.com/damp-tundra-68404.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/damp-tundra-68404.git'
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git add .
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git commit -m "final"
+[master 485f7e5] final
+ 2 files changed, 27 insertions(+), 1 deletion(-)
+ create mode 100644 requirements.txt
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git push heroku master
+Enumerating objects: 47, done.
+Counting objects: 100% (47/47), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (38/38), done.
+Writing objects: 100% (47/47), 5.41 MiB | 1009.00 KiB/s, done.
+Total 47 (delta 9), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: cp: cannot create regular file '/app/tmp/cache/.heroku/requirements.txt': No such file or directory
+remote: -----> Installing python-3.6.10
+remote: -----> Installing pip
+remote: -----> Installing SQLite3
+remote: Sqlite3 successfully installed.
+remote: -----> Installing requirements with pip
+remote:        Collecting beautifulsoup4==4.9.0
+remote:          Downloading beautifulsoup4-4.9.0-py3-none-any.whl (109 kB)
+remote:        Collecting bs4==0.0.1
+remote:          Downloading bs4-0.0.1.tar.gz (1.1 kB)
+remote:        Collecting certifi==2020.4.5.1
+remote:          Downloading certifi-2020.4.5.1-py2.py3-none-any.whl (157 kB)
+remote:        Collecting chardet==3.0.4
+remote:          Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+remote:        Collecting click==7.1.1
+remote:          Downloading click-7.1.1-py2.py3-none-any.whl (82 kB)
+remote:        Collecting Flask==1.1.2
+remote:          Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+remote:        Collecting idna==2.9
+remote:          Downloading idna-2.9-py2.py3-none-any.whl (58 kB)
+remote:        Collecting itsdangerous==1.1.0
+remote:          Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+remote:        Collecting Jinja2==2.11.1
+remote:          Downloading Jinja2-2.11.1-py2.py3-none-any.whl (126 kB)
+remote:        Collecting joblib==0.14.1
+remote:          Downloading joblib-0.14.1-py2.py3-none-any.whl (294 kB)
+remote:        Collecting MarkupSafe==1.1.1
+remote:          Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl (27 kB)
+remote:        Collecting numpy==1.18.2
+remote:          Downloading numpy-1.18.2-cp36-cp36m-manylinux1_x86_64.whl (20.2 MB)
+remote:        Collecting praw==6.5.1
+remote:          Downloading praw-6.5.1-py3-none-any.whl (134 kB)
+remote:        Collecting prawcore==1.0.1
+remote:          Downloading prawcore-1.0.1-py2.py3-none-any.whl (14 kB)
+remote:        Collecting regex==2020.4.4
+remote:          Downloading regex-2020.4.4-cp36-cp36m-manylinux2010_x86_64.whl (679 kB)
+remote:        Collecting requests==2.23.0
+remote:          Downloading requests-2.23.0-py2.py3-none-any.whl (58 kB)
+remote:        Collecting scikit-learn==0.22.2.post1
+remote:          Downloading scikit_learn-0.22.2.post1-cp36-cp36m-manylinux1_x86_64.whl (7.1 MB)
+remote:        Collecting scipy==1.4.1
+remote:          Downloading scipy-1.4.1-cp36-cp36m-manylinux1_x86_64.whl (26.1 MB)
+remote:        Collecting six==1.14.0
+remote:          Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
+remote:        Collecting sklearn==0.0
+remote:          Downloading sklearn-0.0.tar.gz (1.1 kB)
+remote:        Collecting soupsieve==2.0
+remote:          Downloading soupsieve-2.0-py2.py3-none-any.whl (32 kB)
+remote:        Collecting update-checker==0.16
+remote:          Downloading update_checker-0.16-py2.py3-none-any.whl (7.6 kB)
+remote:        Collecting urllib3==1.25.8
+remote:          Downloading urllib3-1.25.8-py2.py3-none-any.whl (125 kB)
+remote:        Collecting websocket-client==0.57.0
+remote:          Downloading websocket_client-0.57.0-py2.py3-none-any.whl (200 kB)
+remote:        Collecting Werkzeug==1.0.1
+remote:          Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+remote:        Building wheels for collected packages: bs4, sklearn
+remote:          Building wheel for bs4 (setup.py): started
+remote:          Building wheel for bs4 (setup.py): finished with status 'done'
+remote:          Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1272 sha256=986a4f9963ce52b32e401608aa472420657748e2bbac25fab5a6d419c83d0c85
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-no4bf2oa/wheels/19/f5/6d/a97dd4f22376d4472d5f4c76c7646876052ff3166b3cf71050
+remote:          Building wheel for sklearn (setup.py): started
+remote:          Building wheel for sklearn (setup.py): finished with status 'done'
+remote:          Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1315 sha256=7371044317dc593b2015ee642c7b26b76b2d42930e720cbecea102aced20051c
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-no4bf2oa/wheels/23/9d/42/5ec745cbbb17517000a53cecc49d6a865450d1f5cb16dc8a9c
+remote:        Successfully built bs4 sklearn
+remote:        Installing collected packages: soupsieve, beautifulsoup4, bs4, certifi, chardet, click, itsdangerous, MarkupSafe, Jinja2, Werkzeug, Flask, idna, joblib, numpy, urllib3, requests, update-checker, six, websocket-client, prawcore, praw, regex, scipy, scikit-learn, sklearn
+remote:        Successfully installed Flask-1.1.2 Jinja2-2.11.1 MarkupSafe-1.1.1 Werkzeug-1.0.1 beautifulsoup4-4.9.0 bs4-0.0.1 certifi-2020.4.5.1 chardet-3.0.4 click-7.1.1 idna-2.9 itsdangerous-1.1.0 joblib-0.14.1 numpy-1.18.2 praw-6.5.1 prawcore-1.0.1 regex-2020.4.4 requests-2.23.0 scikit-learn-0.22.2.post1 scipy-1.4.1 six-1.14.0 sklearn-0.0 soupsieve-2.0 update-checker-0.16 urllib3-1.25.8 websocket-client-0.57.0
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 110.7M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://damp-tundra-68404.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/damp-tundra-68404.git
+ * [new branch]      master -> master
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 install gunicorn
+Collecting gunicorn
+  Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+     |████████████████████████████████| 77 kB 941 kB/s 
+Requirement already satisfied: setuptools>=3.0 in ./env/lib/python3.7/site-packages (from gunicorn) (46.1.3)
+Installing collected packages: gunicorn
+Successfully installed gunicorn-20.0.4
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git add .
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git commit -m "final v1"
+[master 31b6076] final v1
+ 2 files changed, 1 deletion(-)
+ create mode 100644 model.pkl
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 freeze > requirements.txt
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git add .
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git commit -m "final v1"
+[master 79d82e4] final v1
+ 1 file changed, 1 insertion(+)
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git push heroku master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 25.05 MiB | 1.67 MiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: -----> Clearing cached dependencies
+remote: -----> Installing python-3.6.10
+remote: -----> Installing pip
+remote: -----> Installing SQLite3
+remote: Sqlite3 successfully installed.
+remote: -----> Installing requirements with pip
+remote:        Collecting beautifulsoup4==4.9.0
+remote:          Downloading beautifulsoup4-4.9.0-py3-none-any.whl (109 kB)
+remote:        Collecting bs4==0.0.1
+remote:          Downloading bs4-0.0.1.tar.gz (1.1 kB)
+remote:        Collecting certifi==2020.4.5.1
+remote:          Downloading certifi-2020.4.5.1-py2.py3-none-any.whl (157 kB)
+remote:        Collecting chardet==3.0.4
+remote:          Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+remote:        Collecting click==7.1.1
+remote:          Downloading click-7.1.1-py2.py3-none-any.whl (82 kB)
+remote:        Collecting Flask==1.1.2
+remote:          Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting idna==2.9
+remote:          Downloading idna-2.9-py2.py3-none-any.whl (58 kB)
+remote:        Collecting itsdangerous==1.1.0
+remote:          Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+remote:        Collecting Jinja2==2.11.1
+remote:          Downloading Jinja2-2.11.1-py2.py3-none-any.whl (126 kB)
+remote:        Collecting joblib==0.14.1
+remote:          Downloading joblib-0.14.1-py2.py3-none-any.whl (294 kB)
+remote:        Collecting MarkupSafe==1.1.1
+remote:          Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl (27 kB)
+remote:        Collecting numpy==1.18.2
+remote:          Downloading numpy-1.18.2-cp36-cp36m-manylinux1_x86_64.whl (20.2 MB)
+remote:        Collecting praw==6.5.1
+remote:          Downloading praw-6.5.1-py3-none-any.whl (134 kB)
+remote:        Collecting prawcore==1.0.1
+remote:          Downloading prawcore-1.0.1-py2.py3-none-any.whl (14 kB)
+remote:        Collecting regex==2020.4.4
+remote:          Downloading regex-2020.4.4-cp36-cp36m-manylinux2010_x86_64.whl (679 kB)
+remote:        Collecting requests==2.23.0
+remote:          Downloading requests-2.23.0-py2.py3-none-any.whl (58 kB)
+remote:        Collecting scikit-learn==0.22.2.post1
+remote:          Downloading scikit_learn-0.22.2.post1-cp36-cp36m-manylinux1_x86_64.whl (7.1 MB)
+remote:        Collecting scipy==1.4.1
+remote:          Downloading scipy-1.4.1-cp36-cp36m-manylinux1_x86_64.whl (26.1 MB)
+remote:        Collecting six==1.14.0
+remote:          Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
+remote:        Collecting sklearn==0.0
+remote:          Downloading sklearn-0.0.tar.gz (1.1 kB)
+remote:        Collecting soupsieve==2.0
+remote:          Downloading soupsieve-2.0-py2.py3-none-any.whl (32 kB)
+remote:        Collecting update-checker==0.16
+remote:          Downloading update_checker-0.16-py2.py3-none-any.whl (7.6 kB)
+remote:        Collecting urllib3==1.25.8
+remote:          Downloading urllib3-1.25.8-py2.py3-none-any.whl (125 kB)
+remote:        Collecting websocket-client==0.57.0
+remote:          Downloading websocket_client-0.57.0-py2.py3-none-any.whl (200 kB)
+remote:        Collecting Werkzeug==1.0.1
+remote:          Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+remote:        Building wheels for collected packages: bs4, sklearn
+remote:          Building wheel for bs4 (setup.py): started
+remote:          Building wheel for bs4 (setup.py): finished with status 'done'
+remote:          Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1272 sha256=7f837fce1c07dd32aa577e46e8da03225230d232b146a508fb8b64b8b483af80
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-9ijhttuu/wheels/19/f5/6d/a97dd4f22376d4472d5f4c76c7646876052ff3166b3cf71050
+remote:          Building wheel for sklearn (setup.py): started
+remote:          Building wheel for sklearn (setup.py): finished with status 'done'
+remote:          Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1315 sha256=c3ef30802d95d24e07ce3880c95ed45fa7aa8a8369b66c1bc16ff2bbc6673b33
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-9ijhttuu/wheels/23/9d/42/5ec745cbbb17517000a53cecc49d6a865450d1f5cb16dc8a9c
+remote:        Successfully built bs4 sklearn
+remote:        Installing collected packages: soupsieve, beautifulsoup4, bs4, certifi, chardet, click, itsdangerous, Werkzeug, MarkupSafe, Jinja2, Flask, gunicorn, idna, joblib, numpy, urllib3, requests, prawcore, six, websocket-client, update-checker, praw, regex, scipy, scikit-learn, sklearn
+remote:        Successfully installed Flask-1.1.2 Jinja2-2.11.1 MarkupSafe-1.1.1 Werkzeug-1.0.1 beautifulsoup4-4.9.0 bs4-0.0.1 certifi-2020.4.5.1 chardet-3.0.4 click-7.1.1 gunicorn-20.0.4 idna-2.9 itsdangerous-1.1.0 joblib-0.14.1 numpy-1.18.2 praw-6.5.1 prawcore-1.0.1 regex-2020.4.4 requests-2.23.0 scikit-learn-0.22.2.post1 scipy-1.4.1 six-1.14.0 sklearn-0.0 soupsieve-2.0 update-checker-0.16 urllib3-1.25.8 websocket-client-0.57.0
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 135.8M
+remote: -----> Launching...
+remote:        Released v4
+remote:        https://damp-tundra-68404.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/damp-tundra-68404.git
+   485f7e5..79d82e4  master -> master
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 install nltk
+Collecting nltk
+  Downloading nltk-3.4.5.zip (1.5 MB)
+     |████████████████████████████████| 1.5 MB 4.1 MB/s 
+Requirement already satisfied: six in ./env/lib/python3.7/site-packages (from nltk) (1.14.0)
+Building wheels for collected packages: nltk
+  Building wheel for nltk (setup.py) ... done
+  Created wheel for nltk: filename=nltk-3.4.5-py3-none-any.whl size=1449906 sha256=ad5478ec41056dfc99af23cadb9b5e7bbc51942c6a773af9e51b3e76d65431ff
+  Stored in directory: /Users/manthan/Library/Caches/pip/wheels/48/8b/7f/473521e0c731c6566d631b281f323842bbda9bd819eb9a3ead
+Successfully built nltk
+Installing collected packages: nltk
+Successfully installed nltk-3.4.5
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git add .
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git commit -m "final v1.1"
+On branch master
+nothing to commit, working tree clean
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 freeze > requirements.txt
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git add .
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git commit -m "final v1.1"
+[master b84bc0e] final v1.1
+ 1 file changed, 1 insertion(+)
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git push heroku master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 292 bytes | 292.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: -----> Clearing cached dependencies
+remote: -----> Installing python-3.6.10
+remote: -----> Installing pip
+remote: -----> Installing SQLite3
+remote: Sqlite3 successfully installed.
+remote: -----> Installing requirements with pip
+remote:        Collecting beautifulsoup4==4.9.0
+remote:          Downloading beautifulsoup4-4.9.0-py3-none-any.whl (109 kB)
+remote:        Collecting bs4==0.0.1
+remote:          Downloading bs4-0.0.1.tar.gz (1.1 kB)
+remote:        Collecting certifi==2020.4.5.1
+remote:          Downloading certifi-2020.4.5.1-py2.py3-none-any.whl (157 kB)
+remote:        Collecting chardet==3.0.4
+remote:          Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+remote:        Collecting click==7.1.1
+remote:          Downloading click-7.1.1-py2.py3-none-any.whl (82 kB)
+remote:        Collecting Flask==1.1.2
+remote:          Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting idna==2.9
+remote:          Downloading idna-2.9-py2.py3-none-any.whl (58 kB)
+remote:        Collecting itsdangerous==1.1.0
+remote:          Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+remote:        Collecting Jinja2==2.11.1
+remote:          Downloading Jinja2-2.11.1-py2.py3-none-any.whl (126 kB)
+remote:        Collecting joblib==0.14.1
+remote:          Downloading joblib-0.14.1-py2.py3-none-any.whl (294 kB)
+remote:        Collecting MarkupSafe==1.1.1
+remote:          Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl (27 kB)
+remote:        Collecting nltk==3.4.5
+remote:          Downloading nltk-3.4.5.zip (1.5 MB)
+remote:        Collecting numpy==1.18.2
+remote:          Downloading numpy-1.18.2-cp36-cp36m-manylinux1_x86_64.whl (20.2 MB)
+remote:        Collecting praw==6.5.1
+remote:          Downloading praw-6.5.1-py3-none-any.whl (134 kB)
+remote:        Collecting prawcore==1.0.1
+remote:          Downloading prawcore-1.0.1-py2.py3-none-any.whl (14 kB)
+remote:        Collecting regex==2020.4.4
+remote:          Downloading regex-2020.4.4-cp36-cp36m-manylinux2010_x86_64.whl (679 kB)
+remote:        Collecting requests==2.23.0
+remote:          Downloading requests-2.23.0-py2.py3-none-any.whl (58 kB)
+remote:        Collecting scikit-learn==0.22.2.post1
+remote:          Downloading scikit_learn-0.22.2.post1-cp36-cp36m-manylinux1_x86_64.whl (7.1 MB)
+remote:        Collecting scipy==1.4.1
+remote:          Downloading scipy-1.4.1-cp36-cp36m-manylinux1_x86_64.whl (26.1 MB)
+remote:        Collecting six==1.14.0
+remote:          Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
+remote:        Collecting sklearn==0.0
+remote:          Downloading sklearn-0.0.tar.gz (1.1 kB)
+remote:        Collecting soupsieve==2.0
+remote:          Downloading soupsieve-2.0-py2.py3-none-any.whl (32 kB)
+remote:        Collecting update-checker==0.16
+remote:          Downloading update_checker-0.16-py2.py3-none-any.whl (7.6 kB)
+remote:        Collecting urllib3==1.25.8
+remote:          Downloading urllib3-1.25.8-py2.py3-none-any.whl (125 kB)
+remote:        Collecting websocket-client==0.57.0
+remote:          Downloading websocket_client-0.57.0-py2.py3-none-any.whl (200 kB)
+remote:        Collecting Werkzeug==1.0.1
+remote:          Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+remote:        Building wheels for collected packages: bs4, nltk, sklearn
+remote:          Building wheel for bs4 (setup.py): started
+remote:          Building wheel for bs4 (setup.py): finished with status 'done'
+remote:          Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1272 sha256=2d7fd962d0e6b7bbc2aca31cd9ac96531b3945566a8561ccda51d0a7ce80c52e
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-8uovbuj2/wheels/19/f5/6d/a97dd4f22376d4472d5f4c76c7646876052ff3166b3cf71050
+remote:          Building wheel for nltk (setup.py): started
+remote:          Building wheel for nltk (setup.py): finished with status 'done
+remote:          Created wheel for nltk: filename=nltk-3.4.5-py3-none-any.whl size=1449905 sha256=c615bb6a2164aab8be1dd8afd4f4a5d155419d5fd6b147201caf530e91567d99
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-8uovbuj2/wheels/e3/c9/b0/ed26a73ef75a53145820825afa8e2d2c9b30fe9f6c10cd3202
+remote:          Building wheel for sklearn (setup.py): started
+remote:          Building wheel for sklearn (setup.py): finished with status 'done'
+remote:          Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1315 sha256=357dbc11a90c1920a229ddf2ae6dbf18e320df91f594d308218e9a76a524ff06
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-8uovbuj2/wheels/23/9d/42/5ec745cbbb17517000a53cecc49d6a865450d1f5cb16dc8a9c
+remote:        Successfully built bs4 nltk sklearn
+remote:        Installing collected packages: soupsieve, beautifulsoup4, bs4, certifi, chardet, click, Werkzeug, itsdangerous, MarkupSafe, Jinja2, Flask, gunicorn, idna, joblib, six, nltk, numpy, urllib3, requests, prawcore, update-checker, websocket-client, praw, regex, scipy, scikit-learn, sklearn
+remote:        Successfully installed Flask-1.1.2 Jinja2-2.11.1 MarkupSafe-1.1.1 Werkzeug-1.0.1 beautifulsoup4-4.9.0 bs4-0.0.1 certifi-2020.4.5.1 chardet-3.0.4 click-7.1.1 gunicorn-20.0.4 idna-2.9 itsdangerous-1.1.0 joblib-0.14.1 nltk-3.4.5 numpy-1.18.2 praw-6.5.1 prawcore-1.0.1 regex-2020.4.4 requests-2.23.0 scikit-learn-0.22.2.post1 scipy-1.4.1 six-1.14.0 sklearn-0.0 soupsieve-2.0 update-checker-0.16 urllib3-1.25.8 websocket-client-0.57.0
+remote: -----> Downloading NLTK corpora…
+remote: -----> Downloading NLTK packages: stopwords
+remote: /app/.heroku/python/lib/python3.6/runpy.py:125: RuntimeWarning: 'nltk.downloader' found in sys.modules after import of package 'nltk', but prior to execution of 'nltk.downloader'; this may result in unpredictable behaviour
+remote:   warn(RuntimeWarning(msg))
+remote: [nltk_data] Downloading package stopwords to /tmp/build_d2ba179585475e
+remote: [nltk_data]     14a2eb52d5436b0d5d/.heroku/python/nltk_data...
+remote: [nltk_data]   Unzipping corpora/stopwords.zip.
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 138.4M
+remote: -----> Launching...
+remote:        Released v5
+remote:        https://damp-tundra-68404.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/damp-tundra-68404.git
+   79d82e4..b84bc0e  master -> master
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 install lxml
+Collecting lxml
+  Downloading lxml-4.5.0-cp37-cp37m-macosx_10_9_x86_64.whl (4.5 MB)
+     |████████████████████████████████| 4.5 MB 167 kB/s 
+Installing collected packages: lxml
+Successfully installed lxml-4.5.0
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ pip3 freeze > requirements.txt
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git add .
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git commit -m "final v1.2"
+[master 5961372] final v1.2
+ 1 file changed, 1 insertion(+)
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git push heroku master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 296 bytes | 296.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: -----> Clearing cached dependencies
+remote: -----> Installing python-3.6.10
+remote: -----> Installing pip
+remote: -----> Installing SQLite3
+remote: Sqlite3 successfully installed.
+remote: -----> Installing requirements with pip
+remote:        Collecting beautifulsoup4==4.9.0
+remote:          Downloading beautifulsoup4-4.9.0-py3-none-any.whl (109 kB)
+remote:        Collecting bs4==0.0.1
+remote:          Downloading bs4-0.0.1.tar.gz (1.1 kB)
+remote:        Collecting certifi==2020.4.5.1
+remote:          Downloading certifi-2020.4.5.1-py2.py3-none-any.whl (157 kB)
+remote:        Collecting chardet==3.0.4
+remote:          Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+remote:        Collecting click==7.1.1
+remote:          Downloading click-7.1.1-py2.py3-none-any.whl (82 kB)
+remote:        Collecting Flask==1.1.2
+remote:          Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting idna==2.9
+remote:          Downloading idna-2.9-py2.py3-none-any.whl (58 kB)
+remote:        Collecting itsdangerous==1.1.0
+remote:          Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+remote:        Collecting Jinja2==2.11.1
+remote:          Downloading Jinja2-2.11.1-py2.py3-none-any.whl (126 kB)
+remote:        Collecting joblib==0.14.1
+remote:          Downloading joblib-0.14.1-py2.py3-none-any.whl (294 kB)
+remote:        Collecting lxml==4.5.0
+remote:          Downloading lxml-4.5.0-cp36-cp36m-manylinux1_x86_64.whl (5.8 MB)
+remote:        Collecting MarkupSafe==1.1.1
+remote:          Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl (27 kB)
+remote:        Collecting nltk==3.4.5
+remote:          Downloading nltk-3.4.5.zip (1.5 MB)
+remote:        Collecting numpy==1.18.2
+remote:          Downloading numpy-1.18.2-cp36-cp36m-manylinux1_x86_64.whl (20.2 MB)
+remote:        Collecting praw==6.5.1
+remote:          Downloading praw-6.5.1-py3-none-any.whl (134 kB)
+remote:        Collecting prawcore==1.0.1
+remote:          Downloading prawcore-1.0.1-py2.py3-none-any.whl (14 kB)
+remote:        Collecting regex==2020.4.4
+remote:          Downloading regex-2020.4.4-cp36-cp36m-manylinux2010_x86_64.whl (679 kB)
+remote:        Collecting requests==2.23.0
+remote:          Downloading requests-2.23.0-py2.py3-none-any.whl (58 kB)
+remote:        Collecting scikit-learn==0.22.2.post1
+remote:          Downloading scikit_learn-0.22.2.post1-cp36-cp36m-manylinux1_x86_64.whl (7.1 MB)
+remote:        Collecting scipy==1.4.1
+remote:          Downloading scipy-1.4.1-cp36-cp36m-manylinux1_x86_64.whl (26.1 MB)
+remote:        Collecting six==1.14.0
+remote:          Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
+remote:        Collecting sklearn==0.0
+remote:          Downloading sklearn-0.0.tar.gz (1.1 kB)
+remote:        Collecting soupsieve==2.0
+remote:          Downloading soupsieve-2.0-py2.py3-none-any.whl (32 kB)
+remote:        Collecting update-checker==0.16
+remote:          Downloading update_checker-0.16-py2.py3-none-any.whl (7.6 kB)
+remote:        Collecting urllib3==1.25.8
+remote:          Downloading urllib3-1.25.8-py2.py3-none-any.whl (125 kB)
+remote:        Collecting websocket-client==0.57.0
+remote:          Downloading websocket_client-0.57.0-py2.py3-none-any.whl (200 kB)
+remote:        Collecting Werkzeug==1.0.1
+remote:          Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+remote:        Building wheels for collected packages: bs4, nltk, sklearn
+remote:          Building wheel for bs4 (setup.py): started
+remote:          Building wheel for bs4 (setup.py): finished with status 'done'
+remote:          Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1272 sha256=476979d07921875841e45a3c65aee21c62e1a7df7a56075b9452ed6436b95690
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-z1qkbjsh/wheels/19/f5/6d/a97dd4f22376d4472d5f4c76c7646876052ff3166b3cf71050
+remote:          Building wheel for nltk (setup.py): started
+remote:          Building wheel for nltk (setup.py): finished with status 'done
+remote:          Created wheel for nltk: filename=nltk-3.4.5-py3-none-any.whl size=1449904 sha256=d494755ed2e4fb16b585b4b7d8eafce18785909df45f5e187f46a7b0564e3c2c
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-z1qkbjsh/wheels/e3/c9/b0/ed26a73ef75a53145820825afa8e2d2c9b30fe9f6c10cd3202
+remote:          Building wheel for sklearn (setup.py): started
+remote:          Building wheel for sklearn (setup.py): finished with status 'done'
+remote:          Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1315 sha256=c50f17632189102e309617beb288f041f526eebe4ba6249d7cb6d6a10903102e
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-z1qkbjsh/wheels/23/9d/42/5ec745cbbb17517000a53cecc49d6a865450d1f5cb16dc8a9c
+remote:        Successfully built bs4 nltk sklearn
+remote:        Installing collected packages: soupsieve, beautifulsoup4, bs4, certifi, chardet, click, itsdangerous, MarkupSafe, Jinja2, Werkzeug, Flask, gunicorn, idna, joblib, lxml, six, nltk, numpy, websocket-client, urllib3, requests, update-checker, prawcore, praw, regex, scipy, scikit-learn, sklearn
+remote:        Successfully installed Flask-1.1.2 Jinja2-2.11.1 MarkupSafe-1.1.1 Werkzeug-1.0.1 beautifulsoup4-4.9.0 bs4-0.0.1 certifi-2020.4.5.1 chardet-3.0.4 click-7.1.1 gunicorn-20.0.4 idna-2.9 itsdangerous-1.1.0 joblib-0.14.1 lxml-4.5.0 nltk-3.4.5 numpy-1.18.2 praw-6.5.1 prawcore-1.0.1 regex-2020.4.4 requests-2.23.0 scikit-learn-0.22.2.post1 scipy-1.4.1 six-1.14.0 sklearn-0.0 soupsieve-2.0 update-checker-0.16 urllib3-1.25.8 websocket-client-0.57.0
+remote: -----> Downloading NLTK corpora…
+remote: -----> Downloading NLTK packages: stopwords
+remote: /app/.heroku/python/lib/python3.6/runpy.py:125: RuntimeWarning: 'nltk.downloader' found in sys.modules after import of package 'nltk', but prior to execution of 'nltk.downloader'; this may result in unpredictable behaviour
+remote:   warn(RuntimeWarning(msg))
+remote: [nltk_data] Downloading package stopwords to /tmp/build_69b50a25acdb15
+remote: [nltk_data]     9f37a12a285936725e/.heroku/python/nltk_data...
+remote: [nltk_data]   Unzipping corpora/stopwords.zip.
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 143.9M
+remote: -----> Launching...
+remote:        Released v6
+remote:        https://damp-tundra-68404.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/damp-tundra-68404.git
+   b84bc0e..5961372  master -> master
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git add .
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git commit -m "final v1.3"
+[master 13fec68] final v1.3
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git push heroku master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 473 bytes | 473.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: -----> Clearing cached dependencies
+remote: -----> Installing python-3.6.10
+remote: -----> Installing pip
+remote: -----> Installing SQLite3
+remote: Sqlite3 successfully installed.
+remote: -----> Installing requirements with pip
+remote:        Collecting beautifulsoup4==4.9.0
+remote:          Downloading beautifulsoup4-4.9.0-py3-none-any.whl (109 kB)
+remote:        Collecting bs4==0.0.1
+remote:          Downloading bs4-0.0.1.tar.gz (1.1 kB)
+remote:        Collecting certifi==2020.4.5.1
+remote:          Downloading certifi-2020.4.5.1-py2.py3-none-any.whl (157 kB)
+remote:        Collecting chardet==3.0.4
+remote:          Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+remote:        Collecting click==7.1.1
+remote:          Downloading click-7.1.1-py2.py3-none-any.whl (82 kB)
+remote:        Collecting Flask==1.1.2
+remote:          Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting idna==2.9
+remote:          Downloading idna-2.9-py2.py3-none-any.whl (58 kB)
+remote:        Collecting itsdangerous==1.1.0
+remote:          Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+remote:        Collecting Jinja2==2.11.1
+remote:          Downloading Jinja2-2.11.1-py2.py3-none-any.whl (126 kB)
+remote:        Collecting joblib==0.14.1
+remote:          Downloading joblib-0.14.1-py2.py3-none-any.whl (294 kB)
+remote:        Collecting lxml==4.5.0
+remote:          Downloading lxml-4.5.0-cp36-cp36m-manylinux1_x86_64.whl (5.8 MB)
+remote:        Collecting MarkupSafe==1.1.1
+remote:          Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl (27 kB)
+remote:        Collecting nltk==3.4.5
+remote:          Downloading nltk-3.4.5.zip (1.5 MB)
+remote:        Collecting numpy==1.18.2
+remote:          Downloading numpy-1.18.2-cp36-cp36m-manylinux1_x86_64.whl (20.2 MB)
+remote:        Collecting praw==6.5.1
+remote:          Downloading praw-6.5.1-py3-none-any.whl (134 kB)
+remote:        Collecting prawcore==1.0.1
+remote:          Downloading prawcore-1.0.1-py2.py3-none-any.whl (14 kB)
+remote:        Collecting regex==2020.4.4
+remote:          Downloading regex-2020.4.4-cp36-cp36m-manylinux2010_x86_64.whl (679 kB)
+remote:        Collecting requests==2.23.0
+remote:          Downloading requests-2.23.0-py2.py3-none-any.whl (58 kB)
+remote:        Collecting scikit-learn==0.22.2.post1
+remote:          Downloading scikit_learn-0.22.2.post1-cp36-cp36m-manylinux1_x86_64.whl (7.1 MB)
+remote:        Collecting scipy==1.4.1
+remote:          Downloading scipy-1.4.1-cp36-cp36m-manylinux1_x86_64.whl (26.1 MB)
+remote:        Collecting six==1.14.0
+remote:          Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
+remote:        Collecting sklearn==0.0
+remote:          Downloading sklearn-0.0.tar.gz (1.1 kB)
+remote:        Collecting soupsieve==2.0
+remote:          Downloading soupsieve-2.0-py2.py3-none-any.whl (32 kB)
+remote:        Collecting update-checker==0.16
+remote:          Downloading update_checker-0.16-py2.py3-none-any.whl (7.6 kB)
+remote:        Collecting urllib3==1.25.8
+remote:          Downloading urllib3-1.25.8-py2.py3-none-any.whl (125 kB)
+remote:        Collecting websocket-client==0.57.0
+remote:          Downloading websocket_client-0.57.0-py2.py3-none-any.whl (200 kB)
+remote:        Collecting Werkzeug==1.0.1
+remote:          Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+remote:        Building wheels for collected packages: bs4, nltk, sklearn
+remote:          Building wheel for bs4 (setup.py): started
+remote:          Building wheel for bs4 (setup.py): finished with status 'done'
+remote:          Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1272 sha256=41ed4f008b526efb18d5b86ff096d2c4b500d55e70d18c319536198a024955fe
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-1c2ymavx/wheels/19/f5/6d/a97dd4f22376d4472d5f4c76c7646876052ff3166b3cf71050
+remote:          Building wheel for nltk (setup.py): started
+remote:          Building wheel for nltk (setup.py): finished with status 'done
+remote:          Created wheel for nltk: filename=nltk-3.4.5-py3-none-any.whl size=1449905 sha256=0efb36c42b19d850b926f9649125997e97bb75e619c105b608575b5bad5ffae4
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-1c2ymavx/wheels/e3/c9/b0/ed26a73ef75a53145820825afa8e2d2c9b30fe9f6c10cd3202
+remote:          Building wheel for sklearn (setup.py): started
+remote:          Building wheel for sklearn (setup.py): finished with status 'done'
+remote:          Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1315 sha256=60383310e3ef664e1906c807b90024fe37edc3d0c8e0b9b9d5a5037f30ca6a44
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-1c2ymavx/wheels/23/9d/42/5ec745cbbb17517000a53cecc49d6a865450d1f5cb16dc8a9c
+remote:        Successfully built bs4 nltk sklearn
+remote:        Installing collected packages: soupsieve, beautifulsoup4, bs4, certifi, chardet, click, MarkupSafe, Jinja2, Werkzeug, itsdangerous, Flask, gunicorn, idna, joblib, lxml, six, nltk, numpy, urllib3, requests, prawcore, update-checker, websocket-client, praw, regex, scipy, scikit-learn, sklearn
+remote:        Successfully installed Flask-1.1.2 Jinja2-2.11.1 MarkupSafe-1.1.1 Werkzeug-1.0.1 beautifulsoup4-4.9.0 bs4-0.0.1 certifi-2020.4.5.1 chardet-3.0.4 click-7.1.1 gunicorn-20.0.4 idna-2.9 itsdangerous-1.1.0 joblib-0.14.1 lxml-4.5.0 nltk-3.4.5 numpy-1.18.2 praw-6.5.1 prawcore-1.0.1 regex-2020.4.4 requests-2.23.0 scikit-learn-0.22.2.post1 scipy-1.4.1 six-1.14.0 sklearn-0.0 soupsieve-2.0 update-checker-0.16 urllib3-1.25.8 websocket-client-0.57.0
+remote: -----> Downloading NLTK corpora…
+remote: -----> Downloading NLTK packages: stopwords
+remote: /app/.heroku/python/lib/python3.6/runpy.py:125: RuntimeWarning: 'nltk.downloader' found in sys.modules after import of package 'nltk', but prior to execution of 'nltk.downloader'; this may result in unpredictable behaviour
+remote:   warn(RuntimeWarning(msg))
+remote: [nltk_data] Downloading package stopwords to /tmp/build_825d9eac15c8ef
+remote: [nltk_data]     2bb4b0506598dbbe49/.heroku/python/nltk_data...
+remote: [nltk_data]   Unzipping corpora/stopwords.zip.
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 143.8M
+remote: -----> Launching...
+remote:        Released v7
+remote:        https://damp-tundra-68404.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/damp-tundra-68404.git
+   5961372..13fec68  master -> master
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git add .
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git commit -m "final v1.3"
+[master ebaf579] final v1.3
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git push heroku master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 367 bytes | 367.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: -----> Clearing cached dependencies
+remote: -----> Installing python-3.6.10
+remote: -----> Installing pip
+remote: -----> Installing SQLite3
+remote: Sqlite3 successfully installed.
+remote: -----> Installing requirements with pip
+remote:        Collecting beautifulsoup4==4.9.0
+remote:          Downloading beautifulsoup4-4.9.0-py3-none-any.whl (109 kB)
+remote:        Collecting bs4==0.0.1
+remote:          Downloading bs4-0.0.1.tar.gz (1.1 kB)
+remote:        Collecting certifi==2020.4.5.1
+remote:          Downloading certifi-2020.4.5.1-py2.py3-none-any.whl (157 kB)
+remote:        Collecting chardet==3.0.4
+remote:          Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+remote:        Collecting click==7.1.1
+remote:          Downloading click-7.1.1-py2.py3-none-any.whl (82 kB)
+remote:        Collecting Flask==1.1.2
+remote:          Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting idna==2.9
+remote:          Downloading idna-2.9-py2.py3-none-any.whl (58 kB)
+remote:        Collecting itsdangerous==1.1.0
+remote:          Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+remote:        Collecting Jinja2==2.11.1
+remote:          Downloading Jinja2-2.11.1-py2.py3-none-any.whl (126 kB)
+remote:        Collecting joblib==0.14.1
+remote:          Downloading joblib-0.14.1-py2.py3-none-any.whl (294 kB)
+remote:        Collecting lxml==4.5.0
+remote:          Downloading lxml-4.5.0-cp36-cp36m-manylinux1_x86_64.whl (5.8 MB)
+remote:        Collecting MarkupSafe==1.1.1
+remote:          Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl (27 kB)
+remote:        Collecting nltk==3.4.5
+remote:          Downloading nltk-3.4.5.zip (1.5 MB)
+remote:        Collecting numpy==1.18.2
+remote:          Downloading numpy-1.18.2-cp36-cp36m-manylinux1_x86_64.whl (20.2 MB)
+remote:        Collecting praw==6.5.1
+remote:          Downloading praw-6.5.1-py3-none-any.whl (134 kB)
+remote:        Collecting prawcore==1.0.1
+remote:          Downloading prawcore-1.0.1-py2.py3-none-any.whl (14 kB)
+remote:        Collecting regex==2020.4.4
+remote:          Downloading regex-2020.4.4-cp36-cp36m-manylinux2010_x86_64.whl (679 kB)
+remote:        Collecting requests==2.23.0
+remote:          Downloading requests-2.23.0-py2.py3-none-any.whl (58 kB)
+remote:        Collecting scikit-learn==0.21.3
+remote:          Downloading scikit_learn-0.21.3-cp36-cp36m-manylinux1_x86_64.whl (6.7 MB)
+remote:        Collecting scipy==1.4.1
+remote:          Downloading scipy-1.4.1-cp36-cp36m-manylinux1_x86_64.whl (26.1 MB)
+remote:        Collecting six==1.14.0
+remote:          Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
+remote:        Collecting sklearn==0.0
+remote:          Downloading sklearn-0.0.tar.gz (1.1 kB)
+remote:        Collecting soupsieve==2.0
+remote:          Downloading soupsieve-2.0-py2.py3-none-any.whl (32 kB)
+remote:        Collecting update-checker==0.16
+remote:          Downloading update_checker-0.16-py2.py3-none-any.whl (7.6 kB)
+remote:        Collecting urllib3==1.25.8
+remote:          Downloading urllib3-1.25.8-py2.py3-none-any.whl (125 kB)
+remote:        Collecting websocket-client==0.57.0
+remote:          Downloading websocket_client-0.57.0-py2.py3-none-any.whl (200 kB)
+remote:        Collecting Werkzeug==1.0.1
+remote:          Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+remote:        Building wheels for collected packages: bs4, nltk, sklearn
+remote:          Building wheel for bs4 (setup.py): started
+remote:          Building wheel for bs4 (setup.py): finished with status 'done'
+remote:          Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1272 sha256=abede2f33c0e847566cb57684ee6c5bad82e0000272e7c8698df57e1d5cc7313
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-r1t_gw8z/wheels/19/f5/6d/a97dd4f22376d4472d5f4c76c7646876052ff3166b3cf71050
+remote:          Building wheel for nltk (setup.py): started
+remote:          Building wheel for nltk (setup.py): finished with status 'done
+remote:          Created wheel for nltk: filename=nltk-3.4.5-py3-none-any.whl size=1449906 sha256=2436d1b993534eebe5e57477c8af1660231e6888fe5f81bb496ff4c94c01632d
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-r1t_gw8z/wheels/e3/c9/b0/ed26a73ef75a53145820825afa8e2d2c9b30fe9f6c10cd3202
+remote:          Building wheel for sklearn (setup.py): started
+remote:          Building wheel for sklearn (setup.py): finished with status 'done'
+remote:          Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1315 sha256=eae5a0a49124c6e52d5596becad3ed8eab22f0504c0944655bfe206979f3fc6c
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-r1t_gw8z/wheels/23/9d/42/5ec745cbbb17517000a53cecc49d6a865450d1f5cb16dc8a9c
+remote:        Successfully built bs4 nltk sklearn
+remote:        Installing collected packages: soupsieve, beautifulsoup4, bs4, certifi, chardet, click, itsdangerous, MarkupSafe, Jinja2, Werkzeug, Flask, gunicorn, idna, joblib, lxml, six, nltk, numpy, websocket-client, urllib3, requests, update-checker, prawcore, praw, regex, scipy, scikit-learn, sklearn
+remote:        Successfully installed Flask-1.1.2 Jinja2-2.11.1 MarkupSafe-1.1.1 Werkzeug-1.0.1 beautifulsoup4-4.9.0 bs4-0.0.1 certifi-2020.4.5.1 chardet-3.0.4 click-7.1.1 gunicorn-20.0.4 idna-2.9 itsdangerous-1.1.0 joblib-0.14.1 lxml-4.5.0 nltk-3.4.5 numpy-1.18.2 praw-6.5.1 prawcore-1.0.1 regex-2020.4.4 requests-2.23.0 scikit-learn-0.21.3 scipy-1.4.1 six-1.14.0 sklearn-0.0 soupsieve-2.0 update-checker-0.16 urllib3-1.25.8 websocket-client-0.57.0
+remote: -----> Downloading NLTK corpora…
+remote: -----> Downloading NLTK packages: stopwords
+remote: /app/.heroku/python/lib/python3.6/runpy.py:125: RuntimeWarning: 'nltk.downloader' found in sys.modules after import of package 'nltk', but prior to execution of 'nltk.downloader'; this may result in unpredictable behaviour
+remote:   warn(RuntimeWarning(msg))
+remote: [nltk_data] Downloading package stopwords to /tmp/build_32902f4b2adfa0
+remote: [nltk_data]     1077d1e1680559b5a1/.heroku/python/nltk_data...
+remote: [nltk_data]   Unzipping corpora/stopwords.zip.
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 143.4M
+remote: -----> Launching...
+remote:        Released v8
+remote:        https://damp-tundra-68404.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/damp-tundra-68404.git
+   13fec68..ebaf579  master -> master
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git add .
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git commit -m "final v1.4"
+[master 3ffd707] final v1.4
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+ rename test.txt => test2.txt (81%)
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ git push heroku master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 629 bytes | 629.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: -----> Clearing cached dependencies
+remote: -----> Installing python-3.6.10
+remote: -----> Installing pip
+remote: -----> Installing SQLite3
+remote: Sqlite3 successfully installed.
+remote: -----> Installing requirements with pip
+remote:        Collecting beautifulsoup4==4.9.0
+remote:          Downloading beautifulsoup4-4.9.0-py3-none-any.whl (109 kB)
+remote:        Collecting bs4==0.0.1
+remote:          Downloading bs4-0.0.1.tar.gz (1.1 kB)
+remote:        Collecting certifi==2020.4.5.1
+remote:          Downloading certifi-2020.4.5.1-py2.py3-none-any.whl (157 kB)
+remote:        Collecting chardet==3.0.4
+remote:          Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+remote:        Collecting click==7.1.1
+remote:          Downloading click-7.1.1-py2.py3-none-any.whl (82 kB)
+remote:        Collecting Flask==1.1.2
+remote:          Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting idna==2.9
+remote:          Downloading idna-2.9-py2.py3-none-any.whl (58 kB)
+remote:        Collecting itsdangerous==1.1.0
+remote:          Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+remote:        Collecting Jinja2==2.11.1
+remote:          Downloading Jinja2-2.11.1-py2.py3-none-any.whl (126 kB)
+remote:        Collecting joblib==0.14.1
+remote:          Downloading joblib-0.14.1-py2.py3-none-any.whl (294 kB)
+remote:        Collecting lxml==4.5.0
+remote:          Downloading lxml-4.5.0-cp36-cp36m-manylinux1_x86_64.whl (5.8 MB)
+remote:        Collecting MarkupSafe==1.1.1
+remote:          Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl (27 kB)
+remote:        Collecting nltk==3.4.5
+remote:          Downloading nltk-3.4.5.zip (1.5 MB)
+remote:        Collecting numpy==1.18.2
+remote:          Downloading numpy-1.18.2-cp36-cp36m-manylinux1_x86_64.whl (20.2 MB)
+remote:        Collecting praw==6.5.1
+remote:          Downloading praw-6.5.1-py3-none-any.whl (134 kB)
+remote:        Collecting prawcore==1.0.1
+remote:          Downloading prawcore-1.0.1-py2.py3-none-any.whl (14 kB)
+remote:        Collecting regex==2020.4.4
+remote:          Downloading regex-2020.4.4-cp36-cp36m-manylinux2010_x86_64.whl (679 kB)
+remote:        Collecting requests==2.23.0
+remote:          Downloading requests-2.23.0-py2.py3-none-any.whl (58 kB)
+remote:        Collecting scikit-learn==0.21.3
+remote:          Downloading scikit_learn-0.21.3-cp36-cp36m-manylinux1_x86_64.whl (6.7 MB)
+remote:        Collecting scipy==1.4.1
+remote:          Downloading scipy-1.4.1-cp36-cp36m-manylinux1_x86_64.whl (26.1 MB)
+remote:        Collecting six==1.14.0
+remote:          Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
+remote:        Collecting sklearn==0.0
+remote:          Downloading sklearn-0.0.tar.gz (1.1 kB)
+remote:        Collecting soupsieve==2.0
+remote:          Downloading soupsieve-2.0-py2.py3-none-any.whl (32 kB)
+remote:        Collecting update-checker==0.16
+remote:          Downloading update_checker-0.16-py2.py3-none-any.whl (7.6 kB)
+remote:        Collecting urllib3==1.25.8
+remote:          Downloading urllib3-1.25.8-py2.py3-none-any.whl (125 kB)
+remote:        Collecting websocket-client==0.57.0
+remote:          Downloading websocket_client-0.57.0-py2.py3-none-any.whl (200 kB)
+remote:        Collecting Werkzeug==1.0.1
+remote:          Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+remote:        Building wheels for collected packages: bs4, nltk, sklearn
+remote:          Building wheel for bs4 (setup.py): started
+remote:          Building wheel for bs4 (setup.py): finished with status 'done'
+remote:          Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1272 sha256=f975f9310cb49e3c526d2964d1d7c3593bc7d609b06fdcd3e61e29e4a6eff9a5
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-6uaxcacz/wheels/19/f5/6d/a97dd4f22376d4472d5f4c76c7646876052ff3166b3cf71050
+remote:          Building wheel for nltk (setup.py): started
+remote:          Building wheel for nltk (setup.py): finished with status 'done
+remote:          Created wheel for nltk: filename=nltk-3.4.5-py3-none-any.whl size=1449904 sha256=ff88f46bb1e4ac5ca0be539d66fa18a9ffd52716fc8627491c0e69d460060b72
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-6uaxcacz/wheels/e3/c9/b0/ed26a73ef75a53145820825afa8e2d2c9b30fe9f6c10cd3202
+remote:          Building wheel for sklearn (setup.py): started
+remote:          Building wheel for sklearn (setup.py): finished with status 'done'
+remote:          Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1315 sha256=fedd79a162d8a1ef7cd0655c5636d37589fd4f69e5c4526a05ce0cd13bd43427
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-6uaxcacz/wheels/23/9d/42/5ec745cbbb17517000a53cecc49d6a865450d1f5cb16dc8a9c
+remote:        Successfully built bs4 nltk sklearn
+remote:        Installing collected packages: soupsieve, beautifulsoup4, bs4, certifi, chardet, click, Werkzeug, MarkupSafe, Jinja2, itsdangerous, Flask, gunicorn, idna, joblib, lxml, six, nltk, numpy, urllib3, requests, update-checker, websocket-client, prawcore, praw, regex, scipy, scikit-learn, sklearn
+remote:        Successfully installed Flask-1.1.2 Jinja2-2.11.1 MarkupSafe-1.1.1 Werkzeug-1.0.1 beautifulsoup4-4.9.0 bs4-0.0.1 certifi-2020.4.5.1 chardet-3.0.4 click-7.1.1 gunicorn-20.0.4 idna-2.9 itsdangerous-1.1.0 joblib-0.14.1 lxml-4.5.0 nltk-3.4.5 numpy-1.18.2 praw-6.5.1 prawcore-1.0.1 regex-2020.4.4 requests-2.23.0 scikit-learn-0.21.3 scipy-1.4.1 six-1.14.0 sklearn-0.0 soupsieve-2.0 update-checker-0.16 urllib3-1.25.8 websocket-client-0.57.0
+remote: -----> Downloading NLTK corpora…
+remote: -----> Downloading NLTK packages: stopwords
+remote: /app/.heroku/python/lib/python3.6/runpy.py:125: RuntimeWarning: 'nltk.downloader' found in sys.modules after import of package 'nltk', but prior to execution of 'nltk.downloader'; this may result in unpredictable behaviour
+remote:   warn(RuntimeWarning(msg))
+remote: [nltk_data] Downloading package stopwords to /tmp/build_18e7e80382fe45
+remote: [nltk_data]     dfcbbfe6029f5d3d90/.heroku/python/nltk_data...
+remote: [nltk_data]   Unzipping corpora/stopwords.zip.
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 143.4M
+remote: -----> Launching...
+remote:        Released v9
+remote:        https://damp-tundra-68404.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/damp-tundra-68404.git
+   ebaf579..3ffd707  master -> master
+(env) Manthans-MacBook-Pro:MIDAS_final manthan$ deactivate
+Manthans-MacBook-Pro:MIDAS_final manthan$ 

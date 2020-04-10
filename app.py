@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 import nltk
 from werkzeug.utils import secure_filename
 import os
-UPLOAD_FOLDER = '/Users/manthan/Documents/Projects/MIDAS_final/uploads'
+UPLOAD_FOLDER = './uploads/'
 ALLOWED_EXTENSIONS = set(['txt'])
 app = Flask(__name__, static_url_path='/static')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -147,7 +147,7 @@ def atest():
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         resp = jsonify({'message' : 'File successfully uploaded'})
         resp.status_code = 201
-        with open(filename) as f:
+        with open('./uploads/'+filename) as f:
             content = f.readlines()
         for x in content:
             lis1.append(x)
