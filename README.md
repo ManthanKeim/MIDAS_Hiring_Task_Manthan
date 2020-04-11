@@ -1,3 +1,43 @@
+## Tree Structure
+
+.
+├── Procfile
+├── README.md
+├── Terminal\ Saved\ Output
+├── Terminal\ Saved\ Output\ 2
+├── __pycache__
+│   └── app.cpython-37.pyc
+├── app.py
+├── model.pkl
+├── model.py
+├── nltk.txt
+├── requirements.txt
+├── scraping\ and\ visualization\ data
+│   ├── mid_scr.py
+│   ├── reddit_10Apr.csv
+│   └── visual.py
+├── static
+│   ├── css
+│   │   └── style.css
+│   └── images
+│       ├── india.png
+│       ├── india2.png
+│       ├── india3.png
+│       ├── india4.png
+│       ├── india5.png
+│       ├── india6.png
+│       └── india7.png
+├── templates
+│   ├── about.html
+│   └── index.html
+├── test.txt
+├── test2.txt
+└── uploads
+    └── test.txt
+
+7 directories, 26 files
+
+
 # Reddit Flair Predictor
 
 [Project Hosted on : Heroku (CSS not enabled due to memory issue )](https://damp-tundra-68404.herokuapp.com)
