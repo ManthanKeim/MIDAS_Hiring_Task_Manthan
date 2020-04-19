@@ -40,7 +40,7 @@
 ```
 # Reddit Flair Predictor
 
-[Project Hosted on : Heroku (CSS not enabled due to memory issue )](https://damp-tundra-68404.herokuapp.com)
+[Project Hosted on : Heroku](https://damp-tundra-68404.herokuapp.com)
 
 [Machine Learning Model: Google Drive link can be downloaded and used ](https://drive.google.com/open?id=16vAF5CTac_WusgsFWKQHybOIgawz6tP_)
 
