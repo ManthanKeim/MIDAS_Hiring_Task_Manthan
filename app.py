@@ -132,19 +132,19 @@ def atest():
         
     lis1 = []
     lis2 = []
-    if 'files' not in request.files:
+    if 'upload_file' not in request.files:
         resp = jsonify({'message' : 'No file part in the request'})
         resp.status_code = 400
         return resp
-    files = request.files['files']
-    if files.filename == '':
+    upload_file = request.files['upload_file']
+    if upload_file.filename == '':
         resp = jsonify({'message' : 'No file selected for uploading'})
         resp.status_code = 400
         return resp
-    if files and allowed_file(files.filename):
+    if upload_file and allowed_file(upload_file.filename):
     
-        filename = secure_filename(files.filename)
-        files.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        filename = secure_filename(upload_file.filename)
+        upload_file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         resp = jsonify({'message' : 'File successfully uploaded'})
         resp.status_code = 201
         with open('./uploads/'+filename) as f:
