@@ -136,15 +136,15 @@ def atest():
         resp = jsonify({'message' : 'No file part in the request'})
         resp.status_code = 400
         return resp
-    file = request.files['file']
-    if file.filename == '':
+    files = request.files['files']
+    if files.filename == '':
         resp = jsonify({'message' : 'No file selected for uploading'})
         resp.status_code = 400
         return resp
-    if file and allowed_file(file.filename):
+    if files and allowed_file(files.filename):
     
-        filename = secure_filename(file.filename)
-        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        filename = secure_filename(files.filename)
+        files.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         resp = jsonify({'message' : 'File successfully uploaded'})
         resp.status_code = 201
         with open('./uploads/'+filename) as f:
@@ -161,7 +161,7 @@ def atest():
                 break
         return jsonify(fin)
     else:
-        resp = jsonify({'message' : 'Allowed file types are txt, pdf, png, jpg, jpeg, gif'})
+        resp = jsonify({'message' : 'Allowed file types are txt'})
         resp.status_code = 400
         return resp
     
