@@ -132,7 +132,7 @@ def atest():
         
     lis1 = []
     lis2 = []
-    if 'file' not in request.files:
+    if 'files' not in request.files:
         resp = jsonify({'message' : 'No file part in the request'})
         resp.status_code = 400
         return resp
